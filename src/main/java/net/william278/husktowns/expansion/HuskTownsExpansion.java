@@ -83,7 +83,7 @@ public class HuskTownsExpansion extends PlaceholderExpansion {
                 if (role == null) {
                     return huskTownsAPI.getMessageString("placeholder_not_in_town");
                 }
-                return role.toString().replace("_", " ").toLowerCase(Locale.ROOT);
+                return role.displayName();
             case "town_mayor":
                 if (!huskTownsAPI.isPlayerCacheLoaded()) {
                     return huskTownsAPI.getMessageString("placeholder_loading");
